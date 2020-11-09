@@ -68,7 +68,7 @@ function pickImage() {
     var img1 = document.getElementById("img1")
     img1.src = url;
     var img1 = select('#img1')
-    img1.mousePressed(sendData)
+    img1.mouseClicked(sendData)
     console.log("retrive!!!", url)
   }).catch(function(error) {
               // If anything goes wrong while getting the download URL, log the error
@@ -79,7 +79,7 @@ function pickImage() {
     var img2 = document.getElementById("img2")
     img2.src = url;
     var img2 = select('#img2')
-    img2.mousePressed(sendData)
+    img2.mouseClicked(sendData)
     console.log("retrive!!!", url)
   }).catch(function(error) {
               // If anything goes wrong while getting the download URL, log the error
@@ -89,7 +89,7 @@ function pickImage() {
     var img3 = document.getElementById("img3")
     img3.src = url;
     var img3 = select('#img3')
-    img3.mousePressed(sendData)
+    img3.mouseClicked(sendData)
     console.log("retrive!!!", url)
   }).catch(function(error) {
               // If anything goes wrong while getting the download URL, log the error
@@ -99,7 +99,7 @@ function pickImage() {
     var img4 = document.getElementById("img4")
     img4.src = url;
     var img4 = select('#img4')
-    img4.mousePressed(sendData)
+    img4.mouseClicked(sendData)
     console.log("retrive!!!", url)
   }).catch(function(error) {
               // If anything goes wrong while getting the download URL, log the error
@@ -328,7 +328,6 @@ function hideLoading() {
   for (button of buttons) button.removeClass("disabled");
   setTimeout(function(){ ready = true;}, 300);
 }
-
 
 function updateBodyBG(){
   bodyElement.style.backgroundColor = `rgba(${r}, ${g}, ${b}, 1.0)`;
