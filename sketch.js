@@ -32,7 +32,7 @@ function pickColor() {
 }
 
 function pickImage() {
-  var pic = getRandomInt(1, 5)
+  var pic = getRandomInt(1, 13)
   pic_name = pic.toString();
   var file_name = pic_name.concat(".png")
 
