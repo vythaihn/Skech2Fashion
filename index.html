@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>CrowdSourceColor</title>
+	<title>Sketch2Fashion</title>
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
 	<link href="style.css" rel="stylesheet"/>
@@ -14,6 +14,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
 
+	<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.dom.min.js"></script>
@@ -26,22 +27,31 @@
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
 	  <div class="collapse navbar-collapse" id="navbarToggler">
-	    <a class="navbar-brand" href="#"><b>CrowdSourceColor</b></a>
+	    <a class="navbar-brand" href="#"><b>Sketch2Fashion</b></a>
 	    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 	      <li class="nav-item active">
-	        <a class="nav-link" href="#">Source Color<span class="sr-only">(current)</span></a>
+	        <a class="nav-link" href="#">Images<span class="sr-only">(current)</span></a>
 	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="clean.html">Clean Data</a>
-	      </li>
+
 	    </ul>
 	  </div>
 	</nav>
+	<div id="header">
+		Click the photo that looks most realistic to you
+	</div>
 
 	<div id="root">
+		<div id= "all">
+			<img class="image" src="" id="img1">
+			<img class="image" src="" id="img2">
+			<img class="image" src="" id="img3">
+			<img class="image" src="" id="img4">
+		</div>
+		
     <div class="loading" style="display:none;">
       <img src="loading.svg" alt="Loading...">
     </div>
   </div>
 </body>
 </html>
+

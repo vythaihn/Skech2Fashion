@@ -7,11 +7,26 @@
 }
 
 canvas {
-  display: block;
-  margin: 1em auto;
+  display: none;
+}
+
+.image {
+  display: inline-block;
+  margin: 1em 1em;
   box-shadow: 0 0 2em rgba(0,0,0,0.2);
   border-radius: 1em;
 }
+
+.image:hover {
+  box-shadow: 0 0 2em rgba(0,0,0,0.75);
+}
+
+#header {
+  text-align: center;
+  font-size: 3em;
+  color: white;
+}
+
 
 button {
   display: inline-block;
