@@ -43,7 +43,7 @@ function startEverything() {
   
     showLoading();
     pickImage();
-    setTimeout(hideLoading, 2000);
+    setTimeout(hideLoading, 2500);
   
   
     buttons[0].mouseClicked(sendData)
