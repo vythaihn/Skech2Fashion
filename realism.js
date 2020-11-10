@@ -38,7 +38,7 @@ function pickColor() {
 
 function pickImage() {
   var pic = getRandomImage(1, 1759)
-  var model = getRandomModel(6,7);
+  var model = getRandomModel(1,5);
   pic_name = pic.toString();
   model_name = model.toString();
   var file_name = pic_name.concat(".png")
@@ -85,6 +85,8 @@ function pickImage() {
 function doHide(){
     select('#all').hide();
     select('#time').show();
+    for (button of buttons) button.removeClass("disabled");
+
 }
 
 function setup() {
@@ -116,7 +118,9 @@ function setup() {
   //rgbDiv = createDiv().parent('#root');
   bodyElement = document.body;
 
+  showLoading();
   pickImage();
+  setTimeout(hideLoading, 2000);
 
 
   buttons.push(createButton('real').parent('#root').class('green-ish'));
@@ -221,7 +225,7 @@ function hideLoading() {
   select('#all').show();
   timeoutHandle = setTimeout("doHide()", 1000)
   //rgbDiv.html(`R:${r} G:${g} B:${b}`);
-  for (button of buttons) button.removeClass("disabled");
+  //for (button of buttons) button.removeClass("disabled");
   setTimeout(function(){ ready = true;} , 600);
 }
 

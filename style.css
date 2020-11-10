@@ -44,6 +44,12 @@ canvas {
   color: #000000;
 }
 
+#header5 {
+  text-align: center;
+  font-size: 1.3em;
+  color: #ffffff;
+}
+
 #time {
   text-align: center;
   font-size: 2em;
