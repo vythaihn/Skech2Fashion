@@ -59,7 +59,6 @@ function pickImage() {
   bodyElement = document.body;
   pickColor();
 
-
   let img;
   // First we sign in the user anonymously
   //firebase.auth().signInAnonymously().then(function() {
@@ -182,9 +181,10 @@ async function sendData() {
   var data = {
     uid: user.uid,
     image: pic_name,
-    model: this.elt.id
+    model: this.elt.id,
+    email: document.getElementById("textboxinput").value
   };
-  console.log("A")
+  console.log(document.getElementById("textboxinput").value)
   console.log(this);
   console.log("B")
   console.log(data);
