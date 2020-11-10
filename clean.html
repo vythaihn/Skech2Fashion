@@ -18,7 +18,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.dom.min.js"></script>
 
-	<script src="clean.js"></script>
+	<script src="realism.js"></script>
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -26,22 +26,45 @@
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
 	  <div class="collapse navbar-collapse" id="navbarToggler">
-	    <a class="navbar-brand" href="#"><b>CrowdSourceColor</b></a>
+	    <a class="navbar-brand" href="#"><b>Sketch2Fashion</b></a>
 	    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 	      <li class="nav-item active">
-	        <a class="nav-link" href="index.html">Source Color</a>
+	        <a class="nav-link" href="index.html">Images</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="#">Clean Data<span class="sr-only">(current)</span></a>
+	        <a class="nav-link" href="#">Realism<span class="sr-only">(current)</span></a>
 	      </li>
 	    </ul>
 	  </div>
 	</nav>
 
+	<div id="header">
+		Do you think the photo is real or fake? The image will disappear after 1 seconds.
+	</div>
+	<div id="header2">
+		Bạn nghĩ tấm hình dưới đây là thật hay giả? Tấm hình sẽ biến mất sau 1 giây| 单击最适合您的照片 | Haga clic en la foto que le parezca más realista | उस फोटो पर क्लिक करें जो आपको सबसे अधिक यथार्थवादी लगती है
+	</div>
+	<div id="header3">
+	</div>
+
+	<div id="textbox">
+		<input id = "textboxinput" type="email" placeholder="Please enter your email for the raffle:"/>
+	</div>
+
 	<div id="root">
-    <div class="loading" style="display:none;">
-      <img src="loading.svg" alt="Loading...">
-    </div>
-  </div>
+		<div id= "time">
+			Time out! You have unlimited time to respond.
+		</div>
+		<div id= "all">
+			<img class="image" src="" id="img1">
+		</div>
+		
+		<div class="loading" style="display:none;">
+		<img src="loading.svg" alt="Loading...">
+		</div>
+	</div>
+	<div id="header4">
+	The more submissions you click, the higher your chances of winning the raffle.
+	</div>
 </body>
 </html>
