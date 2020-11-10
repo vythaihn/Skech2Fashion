@@ -28,6 +28,31 @@ function getRandomModel(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+function startEverything() {
+    startButton.hide()
+    select('#intro').hide();
+
+
+    bodyElement = document.body;
+
+    buttons.push(createButton('real').parent('#root').class('green-ish'));
+    buttons.push(createButton('fake').parent('#root').class('red-ish'));
+    //for (button of buttons) button.addClass("disabled");
+  
+    //ready = true;
+  
+    showLoading();
+    pickImage();
+    setTimeout(hideLoading, 2000);
+  
+  
+    buttons[0].mouseClicked(sendData)
+    buttons[1].mouseClicked(sendData)
+
+
+  
+}
+
 function pickColor() {
   r = floor(random(256));
   g = floor(random(256));
@@ -86,7 +111,6 @@ function doHide(){
     select('#all').hide();
     select('#time').show();
     for (button of buttons) button.removeClass("disabled");
-
 }
 
 function setup() {
@@ -107,6 +131,9 @@ function setup() {
   firebase.initializeApp(firebaseConfig);
   //firebase.analytics();
 
+  select('#intro').show();
+  startButton = createButton('start').parent('#root').class('green-ish');
+  startButton.mouseClicked(startEverything);
 
 
   //createCanvas(256, 256).parent('#vy');
@@ -116,23 +143,6 @@ function setup() {
   //changeImage();
 
   //rgbDiv = createDiv().parent('#root');
-  bodyElement = document.body;
-
-  showLoading();
-  pickImage();
-  setTimeout(hideLoading, 2000);
-
-
-  buttons.push(createButton('real').parent('#root').class('green-ish'));
-  buttons.push(createButton('fake').parent('#root').class('red-ish'));
-
-
-
-  ready = true;
-
-
-  buttons[0].mouseClicked(sendData)
-  buttons[1].mouseClicked(sendData)
 
 
 

@@ -48,18 +48,30 @@ canvas {
   text-align: center;
   font-size: 1.3em;
   color: #ffffff;
+  
 }
 
 #time {
   text-align: center;
   font-size: 2em;
   color: #ffffff;
+  margin: 2.5em;
+}
+
+#intro {
+  text-align: center;
+  font-size: 1.3em;
+  color: #000000;
+  margin: 2.5em;
 }
 
 #textbox {
   text-align: center;
   font-size: 1em;
+  margin: 3em;
 }
+
+
 
 #textbox input {
   width: 19em;
@@ -76,7 +88,7 @@ button {
   padding-left: 0;
   font-size: 1em;
   line-height: 1.5em;
-  margin: 1em .3em;
+  margin: 2em .3em;
   cursor: pointer;
   border-radius: 1em;
   background-color: #efefef;
