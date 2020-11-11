@@ -63,7 +63,7 @@ function pickColor() {
 
 function pickImage() {
   var pic = getRandomImage(1, 1759)
-  var model = getRandomModel(1,5);
+  var model = getRandomModel(5,6);
   pic_name = pic.toString();
   model_name = model.toString();
   var file_name = pic_name.concat(".png")
@@ -186,7 +186,7 @@ async function sendData() {
   // send this data to something?
   // send the data to firebase!
   let { user } = await authPromise;
-  let colorDatabase = database.ref("realism");
+  let colorDatabase = database.ref("phase3");
 
   // Make an object with data in it
   var data = {
