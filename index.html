@@ -14,7 +14,6 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
 
-	<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.dom.min.js"></script>
@@ -35,15 +34,14 @@
 		  <li class="nav-item">
 	        <a class="nav-link" href="phase2.html">Phase 2</a>
 	      </li>
-
 	    </ul>
 	  </div>
 	</nav>
+
 	<div id="header">
-		Click the photo that looks most realistic to you
+			Fake or Real?
 	</div>
 	<div id="header2">
-		Bấm vào bức hình nhìn thực tế nhất với bạn | 单击最适合您的照片 | Haga clic en la foto que le parezca más realista | उस फोटो पर क्लिक करें जो आपको सबसे अधिक यथार्थवादी लगती है
 	</div>
 	<div id="header3">
 	</div>
@@ -53,20 +51,28 @@
 	</div>
 
 	<div id="root">
+		<div id= "time">
+			Time's up! You have unlimited time to respond.
+		</div>
+		<div id= "intro">
+			We will show you a piece of clothing and ask you if you think the image is real or fake. 
+			Note that you only have 1 second to see the image but you have unlimited time to answer.
+			Click Start when you're ready. Thank you for participating!
+		</div>
+
 		<div id= "all">
 			<img class="image" src="" id="img1">
-			<img class="image" src="" id="img2">
-			<img class="image" src="" id="img3">
-			<img class="image" src="" id="img4">
 		</div>
 		
 		<div class="loading" style="display:none;">
 		<img src="loading.svg" alt="Loading...">
 		</div>
 	</div>
+	<div id="header5">
+		If the image doesn't show up, please do not submit any answers. Reload the page, if it still doesn't work, shoot us a message at vythai@stanford.edu
+	</div>
 	<div id="header4">
-	The more submissions you click, the higher your chances of winning the raffle.
+	    The more submissions you click, the higher your chances of winning the raffle.
 	</div>
 </body>
 </html>
-
